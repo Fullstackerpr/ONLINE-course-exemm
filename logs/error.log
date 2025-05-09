@@ -1,33 +1,34 @@
-{"level":"error","message":"dangg: Otp expired","timestamp":"2025-05-07T15:59:47.216Z"}
-{"level":"error","message":"dangg: Otp expired","timestamp":"2025-05-07T16:00:12.353Z"}
-{"level":"error","message":"dangg: Refresh token not found","timestamp":"2025-05-07T16:02:04.727Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-07T16:19:13.819Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-07T16:19:48.812Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-07T16:20:15.667Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-07T16:23:01.331Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-07T16:23:30.043Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-07T16:24:10.515Z"}
-{"level":"error","message":"dangg: accessToken is not defined","timestamp":"2025-05-08T09:08:00.322Z"}
-{"level":"error","message":"dangg: Otp expired","timestamp":"2025-05-08T09:09:03.974Z"}
-{"level":"error","message":"dangg: Otp expired","timestamp":"2025-05-08T09:12:43.218Z"}
-{"level":"error","message":"dangg: Otp expired","timestamp":"2025-05-08T09:13:36.297Z"}
-{"level":"error","message":"dangg: Cannot read properties of undefined (reading 'role')","timestamp":"2025-05-08T09:50:46.057Z"}
-{"level":"error","message":"dangg: Cannot read properties of undefined (reading 'role')","timestamp":"2025-05-08T09:51:06.909Z"}
-{"level":"error","message":"dangg: Cast to ObjectId failed for value \"user\" (type string) at path \"_id\" for model \"User\"","timestamp":"2025-05-08T09:55:49.000Z"}
-{"level":"error","message":"dangg: Cannot set headers after they are sent to the client","timestamp":"2025-05-08T09:55:49.004Z"}
-{"level":"error","message":"dangg: ValidationError: \"fullName\" is required","timestamp":"2025-05-08T12:37:46.621Z"}
-{"level":"error","message":"dangg: ValidationError: \"fullName\" is required","timestamp":"2025-05-08T12:38:52.393Z"}
-{"level":"error","message":"dangg: Joi.string.required is not a function","timestamp":"2025-05-08T12:40:57.256Z"}
-{"level":"error","message":"dangg: ValidationError: \"price\" must be a number","timestamp":"2025-05-08T12:41:31.750Z"}
-{"level":"error","message":"dangg: categoryValidator.findById is not a function","timestamp":"2025-05-08T14:00:48.564Z"}
-{"level":"error","message":"dangg: Review id not found: undefined","timestamp":"2025-05-08T15:33:48.198Z"}
-{"level":"error","message":"dangg: ValidationError: \"course_id\" is required","timestamp":"2025-05-08T19:03:47.999Z"}
-{"level":"error","message":"dangg: Enrollment validation failed: user_id: Path `user_id` is required., course_id: Path `course_id` is required.","timestamp":"2025-05-08T19:04:28.964Z"}
-{"level":"error","message":"dangg: Review is not defined","timestamp":"2025-05-08T19:16:12.219Z"}
-{"level":"error","message":"dangg: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle","timestamp":"2025-05-08T19:16:12.220Z"}
-{"level":"error","message":"dangg: Review is not defined","timestamp":"2025-05-08T19:18:54.860Z"}
-{"level":"error","message":"dangg: Cannot set headers after they are sent to the client","timestamp":"2025-05-08T19:18:54.877Z"}
-{"level":"error","message":"dangg: Review id not found: 681d005b360e4c9d6489a02e","timestamp":"2025-05-08T19:25:06.721Z"}
-{"level":"error","message":"dangg: Cannot set headers after they are sent to the client","timestamp":"2025-05-08T19:25:06.727Z"}
-{"level":"error","message":"dangg: Review id not found: 681d005b360e4c9d6489a02e","timestamp":"2025-05-08T19:26:08.043Z"}
-{"level":"error","message":"dangg: Cannot set headers after they are sent to the client","timestamp":"2025-05-08T19:26:08.052Z"}
+{"level":"error","message":"dangg: E11000 duplicate key error collection: online-course.users index: email_1 dup key: { email: \"umar@gmail.com\" }","timestamp":"2025-05-09T00:28:40.049Z"}
+{"level":"error","message":"dangg: ValidationError: \"category_id\" is required","timestamp":"2025-05-09T00:29:38.066Z"}
+{"level":"error","message":"dangg: ValidationError: \"category_id\" is required","timestamp":"2025-05-09T00:29:57.148Z"}
+{"level":"error","message":"dangg: ValidationError: \"price\" must be a string","timestamp":"2025-05-09T00:30:13.361Z"}
+{"level":"error","message":"dangg: ValidationError: \"price\" must be a string","timestamp":"2025-05-09T00:30:26.670Z"}
+{"level":"error","message":"dangg: ValidationError: \"price\" must be a string","timestamp":"2025-05-09T00:31:03.344Z"}
+{"level":"error","message":"dangg: ValidationError: \"price\" must be a string","timestamp":"2025-05-09T00:33:15.758Z"}
+{"level":"error","message":"dangg: Course validation failed: author: Cast to ObjectId failed for value \"Dssdvsd\" (type string) at path \"author\" because of \"BSONError\", category_id: Path `category_id` is required.","timestamp":"2025-05-09T00:34:02.136Z"}
+{"level":"error","message":"dangg: Course validation failed: author: Cast to ObjectId failed for value \"Dssdvsd\" (type string) at path \"author\" because of \"BSONError\"","timestamp":"2025-05-09T00:34:53.877Z"}
+{"level":"error","message":"dangg: ValidationError: \"role\" is not allowed","timestamp":"2025-05-09T03:49:54.600Z"}
+{"level":"error","message":"dangg: ValidationError: \"role\" is not allowed","timestamp":"2025-05-09T03:52:04.349Z"}
+{"level":"error","message":"dangg: E11000 duplicate key error collection: e-course.users index: email_1 dup key: { email: \"baxa@gmail.com\" }","timestamp":"2025-05-09T03:53:23.227Z"}
+{"level":"error","message":"dangg: E11000 duplicate key error collection: e-course.users index: email_1 dup key: { email: \"baxa@gmail.com\" }","timestamp":"2025-05-09T03:54:14.431Z"}
+{"level":"error","message":"dangg: Cannot populate path `course` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T03:56:34.133Z"}
+{"level":"error","message":"dangg: Cannot populate path `course` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T03:57:51.129Z"}
+{"level":"error","message":"dangg: Cannot populate path `enrollment` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T04:02:35.981Z"}
+{"level":"error","message":"dangg: Cannot populate path `course` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T04:02:48.960Z"}
+{"level":"error","message":"dangg: Cannot populate path `enrollment` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T04:03:04.708Z"}
+{"level":"error","message":"dangg: Cannot populate path `course_id` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T04:07:04.232Z"}
+{"level":"error","message":"dangg: Cannot populate path `course_id` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T04:07:22.859Z"}
+{"level":"error","message":"dangg: user not found or role could be author","timestamp":"2025-05-09T04:26:32.170Z"}
+{"level":"error","message":"dangg: ValidationError: \"author_id\" is required","timestamp":"2025-05-09T05:03:46.366Z"}
+{"level":"error","message":"dangg: Cast to ObjectId failed for value \"Dssdvsd\" (type string) at path \"_id\" for model \"User\"","timestamp":"2025-05-09T05:04:50.804Z"}
+{"level":"error","message":"dangg: Cannot destructure property 'fullName' of 'value' as it is undefined.","timestamp":"2025-05-09T05:07:46.417Z"}
+{"level":"error","message":"dangg: Cannot populate path `category_id_id` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T05:09:12.810Z"}
+{"level":"error","message":"dangg: ValidationError: \"author_id\" is not allowed to be empty","timestamp":"2025-05-09T05:09:24.038Z"}
+{"level":"error","message":"dangg: category not found ","timestamp":"2025-05-09T05:10:04.572Z"}
+{"level":"error","message":"dangg: Cannot populate path `category_id_id` because it is not in your schema. Set the `strictPopulate` option to false to override.","timestamp":"2025-05-09T05:14:17.975Z"}
+{"level":"error","message":"dangg: id is not defined","timestamp":"2025-05-09T05:36:04.247Z"}
+{"level":"error","message":"dangg: user not found ","timestamp":"2025-05-09T05:40:12.757Z"}
+{"level":"error","message":"dangg: Review validation failed: course_id: Path `course_id` is required., user_id: Path `user_id` is required.","timestamp":"2025-05-09T05:49:19.769Z"}
+{"level":"error","message":"dangg: course not found ","timestamp":"2025-05-09T05:49:58.923Z"}
+{"level":"error","message":"dangg: Review validation failed: commet: Path `commet` is required., rating: Path `rating` is required.","timestamp":"2025-05-09T05:50:24.953Z"}
+{"level":"error","message":"dangg: req is not defined","timestamp":"2025-05-09T06:01:48.902Z"}

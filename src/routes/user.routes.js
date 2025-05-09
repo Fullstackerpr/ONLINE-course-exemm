@@ -1,40 +1,45 @@
 import { Router } from "express";
 import { UserController } from "../controller/user.controller.js";
-// import { JwtAuthGuard } from "../middleware/jwt.auth.guard.js";
-// import { SelfGuard } from "../middleware/self.guard.js";
-// import { AdminGuard } from "../middleware/admin.guard.js";
-// import { SuperAdminGuard } from "../middleware/superadmin.guard.js";
+import { JwtAuthGuard } from "../middleware/jwt.auth.guard.js";
+import { SelfAdminGuard } from "../middleware/self.admin.guard.js";
+import { SuperAdminGuard } from "../middleware/superadmin.guard";
+import { SelfUserGuard } from "../middleware/self.user.guard.js";
+import { SelfAuthorGuard } from "../middleware/self.author.guard.js";
 
 const router = Router();
 const controller = new UserController();
 
-
+//TODO:User
 router
-    .post('/', controller.createUser)
-    .post('/superadmin', controller.createSuperAdmin)
-    .post('/admin', controller.createAdmin)
+  .post("/", JwtAuthGuard, SelfAdminGuard, controller.createUser)
+  .post("/superadmin", controller.createSuperAdmin)
+  .post("/admin", JwtAuthGuard, SuperAdminGuard, controller.createAdmin)
+  .post("/author", JwtAuthGuard, SuperAdminGuard, controller.createAuthor)
 
+  //TODO:Author
 
-    .post('/author', controller.createAuthor)
-    .post('/signin', controller.signinUser)
-    .post('/confirm', controller.confirmUser)
-    .post('/signout', controller.signOutUser)
-    .post('/token', controller.accessToken)
+  .post("/signin", controller.signinUser)
+  .post("/confirm", controller.confirmUser)
+  .post("/signout", controller.signOutUser)
+  .post("/token", controller.accessToken)
 
+  //TODO:User
+  .get("/user", JwtAuthGuard, SelfAdminGuard, controller.getAllUser)
+  .get("/admin", JwtAuthGuard, SuperAdminGuard, controller.getAllAdmin)
+  .get("/author", JwtAuthGuard, SelfAdminGuard, controller.getAllAuthor)
+  .get("/:id", JwtAuthGuard, SelfUserGuard, controller.getByIdUser)
 
-    .get('/user', controller.getAllUser)
-    .get('/admin', controller.getAllAdmin)
-    .get('/author', controller.getAllAuthor)
-    .get('/:id', controller.getByIdUser)
+  //TODO:User
+  .patch("/admin/:id", JwtAuthGuard, SelfAdminGuard, controller.updateUser)
+  .patch(
+    "/superadmin/:id",
+    JwtAuthGuard,
+    SuperAdminGuard,
+    controller.updateUser
+  )
+  .patch("/user/:id", JwtAuthGuard, SelfUserGuard, controller.updateUser)
+  .patch("/author/:id", JwtAuthGuard, SelfAuthorGuard, controller.updateUser)
 
-
-    .patch('/admin/:id',  controller.updateUser)
-    .patch('/superadmin/:id', controller.updateUser)
-    .patch('/user/:id', controller.updateUser)
-    .patch('/author/:id', controller.updateUser)
-
-
-    .delete('/:id', controller.deleteUser)
-    .delete('/:id', controller.deleteUser)
+  .delete("/:id", controller.deleteUser);
 
 export default router;

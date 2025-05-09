@@ -1,10 +1,6 @@
 import { model, Schema } from "mongoose";
 
 const enrollmentSchema = new Schema({
-    enrollment_at: {
-        type: Date,
-        required: true
-    },
     course_id: {
         type: Schema.Types.ObjectId,
         ref: "Course",
@@ -13,9 +9,7 @@ const enrollmentSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "User",
     }
-}, {
-    timestamps: true
-});
+}, { timestamps: true});
 
 const Enrollment = new model('Enrollment', enrollmentSchema);
 export default Enrollment;
